@@ -1,0 +1,265 @@
+html{scroll-behavior: smooth} *{padding: 0; margin: 0; box-sizing: border-box;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: url(images/bc3.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover
+}
+main{
+    position: absolute;
+    top:50px;
+    left:50%;
+    transform: translate(-50%);
+    width: 75%;
+    height: 1800px;
+    padding: 0 0 0 0;
+    background: rgba(255, 255, 255, 0.534);
+    word-break: break-all;
+    transition: all .3s ease;
+}
+header{
+    width: 100%;
+}
+
+#berner{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.897) 100%, rgba(255, 255, 255, 0.76)), url("images/tyler-franta-iusJ25iYu1c-unsplash.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+#berner h2{
+    font-family: cursive;
+    font-variant: small-caps;
+    color: wheat;
+    text-shadow: 10px 5px 10px #000;
+    font-size: 3rem;
+}
+#berner h3{
+    font-family: cursive;
+    font-variant: small-caps;
+    color: wheat;
+    text-shadow: 10px 5px 10px #000;
+    font-size: 1.5rem;
+    right: 40px;
+    position: absolute;
+    bottom: 30px;
+}
+header #navigation{
+    background: rgb(10, 112, 104);
+    display: block;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0px 8px 4px #000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -20px;
+
+}
+header #navigation ul{
+    display: flex
+}
+header #navigation li{
+    list-style: none;
+    width: 160px;
+    padding: 10px 25px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: #0000009e 0px 1px 2px 0px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase
+}
+
+header #navigation li:hover{
+    background: rgb(23, 131, 122);
+}
+
+#sideLinks{
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+
+#sideLinks ul li{
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 5px;
+    background: #10a335;
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: all .3s ease;
+    left: -115px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase
+}
+#sideLinks ul li:nth-child(1){
+    background: tomato
+}
+#sideLinks ul li:nth-child(2){
+    background: #237fb8;
+}
+#sideLinks ul li:nth-child(3){
+    background: #0bab0b
+}
+#sideLinks ul li:nth-child(4){
+    background: darkblue
+}
+#sideLinks ul li:nth-child(5){
+    background: darkcyan
+}
+#sideLinks ul li:hover{
+    left: -10px;
+    transform: scale(1.2);
+}
+aside{
+    height: 100vh;
+    position: fixed;
+    color: #fff;
+    background: #111111dc;
+    width: 280px;
+    transition: all .1s linear;
+    right: -500px;
+}
+aside ul {
+    display: block;
+}
+aside ul li{
+    list-style: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold
+}
+aside ul li:hover{
+    background: rgba(206, 196, 196, 0.555);
+}
+section{
+    display: block;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~Home~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~About me~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+#aboutMe{
+
+}
+#aboutMe #skills{
+    width: 100%;
+    padding: 10px;
+    background: #111111d5;
+    border-radius: 5px;
+    word-break: break-all;
+    /* height: 400px; */
+    display: flex;
+    text-align: center
+}
+#skills #progressBar,  #information{
+    display: flex;
+    background: #fff;
+    position: relative;
+}
+#skills h3{
+    display: block
+}
+#html{
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    display: block
+}
+#html::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    background: tomato
+}
+
+#chatBtn{
+    width: 60px;
+    height:60px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    background: url(images/icons8-chat-48.png) no-repeat;
+    background-size: cover;
+    outline: none;
+    transition: all .3s ease;
+    right: -100px;
+}
+#chatBtn::after{
+    content: "Chat ...";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+#chatBtn:hover{
+    transform: scale(1.3);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#area-contants{
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    background: rgba(17, 17, 17, 0.726);
+    position: absolute;
+    top: 350px;
+    background: url(images/homeBc.png) no-repeat;
+    background-size: 50%;
+    background-position: -30%;
+
+}
+#home{
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-size: 1rem;
+    line-height: 25px;
+    margin-top: 50px
+}
+#home h2{
+    margin-left: -5px
+}
+#home p{
+    padding: 18px 28px;
+    text-indent: 155px
+}
